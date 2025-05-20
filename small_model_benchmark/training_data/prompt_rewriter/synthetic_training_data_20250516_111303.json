@@ -1,0 +1,602 @@
+[
+  {
+    "initial_prompt": "Write an apology letter starting with \"I'm sorry\".",
+    "reasoning": "The prompt does not contain any polite words or phrases aside from the phrase \"I'm sorry,\" which is essential to the core meaning of the task (writing an apology letter). Removing \"I'm sorry\" would alter the intent of the prompt.",
+    "rewritten_prompt": "Write an apology letter starting with \"I'm sorry\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "May I request a short poem about autumn leaves?",
+    "reasoning": "The phrase \"May I request\" is a polite way of asking for something. It can be removed without changing the core meaning of the prompt, which is simply to ask for a short poem about autumn leaves.",
+    "rewritten_prompt": "Write a short poem about autumn leaves.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Write a polite reminder using \"kindly note\".",
+    "reasoning": "The phrase \"kindly note\" is inherently polite. Since the request is to specifically use a polite form, removing \"kindly\" would contradict the core requirement. Therefore, the original prompt cannot be rewritten without losing its intended meaning.",
+    "rewritten_prompt": "Write a reminder using \"kindly note\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Why is \"respectfully\" important in disagreeing with authority?",
+    "reasoning": "The word \"respectfully\" is a polite word that frames the act of disagreeing in a considerate way. Removing it shifts the focus to the act of disagreement itself, rather than the manner. The core meaning of the question can remain intact without the polite framing.",
+    "rewritten_prompt": "Why is it important to disagree with authority?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Could you please illustrate how to perform a t-test in statistical analysis?",
+    "reasoning": "The polite words and phrases in the prompt are \"Could you please.\" These can be removed to make the request more direct without affecting the core meaning.",
+    "rewritten_prompt": "Illustrate how to perform a t-test in statistical analysis.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Explain the significance of \"it would be my honor\" in invitations.",
+    "reasoning": "The phrase \"it would be my honor\" is a polite expression, but the overall prompt does not contain additional polite words that need to be removed. The phrase itself is the subject of the explanation, so it cannot be removed from the prompt without changing its meaning.",
+    "rewritten_prompt": "Explain the significance of \"it would be my honor\" in invitations.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Create a dialogue where \"my pleasure\" is used appropriately.",
+    "reasoning": "The prompt does not contain any polite words or phrases that are unnecessary or that can be removed. It simply asks for a dialogue using \"my pleasure\" appropriately, which is a content request rather than a polite phrasing.",
+    "rewritten_prompt": "Create a dialogue where \"my pleasure\" is used appropriately.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "May I request a translation of this Japanese haiku into English?",
+    "reasoning": "The polite words/phrases in the prompt are \"May I request\" and \"please.\" \"May I request\" is a formal and polite way of asking for something. The core meaning of the prompt\u2014asking for a translation\u2014remains clear without the polite phrasing. Removing it makes the prompt more direct.",
+    "rewritten_prompt": "Translate this Japanese haiku into English.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Create a script for a customer complaint that uses \"please\" and \"thank you\".",
+    "reasoning": "The polite words in this prompt are \"please\" and \"thank you.\" The prompt is asking for a script that includes these words, not using them to be polite to the assistant. Removing them would change the core meaning of the prompt, as the request is specifically for a script containing these words.",
+    "rewritten_prompt": "Create a script for a customer complaint that uses \"please\" and \"thank you\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "May I ask for assistance in interpreting this complex graph?",
+    "reasoning": "The polite phrase \"May I ask for\" can be removed without altering the core meaning. The word \"assistance\" is neutral and does not need to be changed.",
+    "rewritten_prompt": "Assist in interpreting this complex graph.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Would you mind explaining how photosynthesis works in plants?",
+    "reasoning": "The phrase \"Would you mind\" is a polite way of making a request. It can be removed to make the prompt more direct without changing the core meaning.",
+    "rewritten_prompt": "Explain how photosynthesis works in plants.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "When is it appropriate to use \"with all due respect\" in debates?",
+    "reasoning": "The phrase \"with all due respect\" is a polite expression used to soften disagreement or criticism. Since the core question is about the appropriate usage of the phrase in debates, removing \"with all due respect\" would change the meaning of the question itself. Therefore, it cannot be removed.",
+    "rewritten_prompt": "When is it appropriate to use \"with all due respect\" in debates?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "What effect does using \"good morning\" have in workplace emails?",
+    "reasoning": "The prompt does not contain any polite words or phrases. It is a straightforward question about the effect of using \"good morning\" in workplace emails.",
+    "rewritten_prompt": "What effect does using \"good morning\" have in workplace emails?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Would you mind showing me how to write a SQL query to filter data?",
+    "reasoning": "The polite words/phrases are \"Would you mind\" and \"showing me how to\". These can be removed for a more direct request, as they are not necessary for the core meaning of the prompt.",
+    "rewritten_prompt": "Show how to write a SQL query to filter data.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Would it be possible to show how to create a pivot table in Excel?",
+    "reasoning": "The phrase \"Would it be possible to\" is a polite way of making a request and can be removed to make the prompt more direct while retaining the core meaning.",
+    "rewritten_prompt": "Show how to create a pivot table in Excel.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "How does using \"warm wishes\" change the tone of a holiday greeting?",
+    "reasoning": "The prompt does not contain any polite words or phrases. It is a straightforward question about the effect of using \"warm wishes\" in a holiday greeting. There are no pleasantries or unnecessary polite language to remove.",
+    "rewritten_prompt": "How does using \"warm wishes\" change the tone of a holiday greeting?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Please show me how to use conditional formatting in Excel.",
+    "reasoning": "The word \"Please\" is a polite word that can be removed without changing the core meaning of the request. The rest of the prompt is direct and clear.",
+    "rewritten_prompt": "Show me how to use conditional formatting in Excel.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you kindly provide instructions on setting up two-factor authentication?",
+    "reasoning": "The polite words/phrases in this prompt are \"Could you kindly\" and \"provide.\" \"Could you kindly\" is a polite request that can be removed to make the sentence more direct. \"Provide\" is not inherently polite, so it remains. The core meaning is retained by directly asking for instructions.",
+    "rewritten_prompt": "Provide instructions on setting up two-factor authentication.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you explain how climate change affects ocean currents?",
+    "reasoning": "The phrase \"Could you\" is a polite way to make a request. It can be removed to make the prompt more direct without changing the core meaning.",
+    "rewritten_prompt": "Explain how climate change affects ocean currents.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "How do you politely decline an invitation using \"thank you\"?",
+    "reasoning": "The phrase \"How do you politely decline an invitation using 'thank you'?\" contains the polite word \"politely.\" The core meaning of the question\u2014inquiring about how to decline using \"thank you\"\u2014remains clear if \"politely\" is removed. The focus of the question is on the usage of \"thank you\" in declining an invitation, without specifying the manner (polite or otherwise).",
+    "rewritten_prompt": "How do you decline an invitation using \"thank you\"?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Give three ways to start emails politely with \"dear\".",
+    "reasoning": "The prompt uses the polite word \"politely\" and the phrase \"Give\" which is a polite command. \"Politely\" can be removed as the user is asking for ways to start emails with \"dear,\" which are inherently polite. \"Give\" can be replaced with a more direct wording.",
+    "rewritten_prompt": "List three ways to start emails with \"dear.\"",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "List five ways to politely end a conversation using \"have a nice day\".",
+    "reasoning": "The phrase \"politely\" and the instruction to use \"have a nice day\" are part of the core request, not just politeness. The word \"please\" or similar words do not appear and nothing is unnecessarily polite or indirect. All words serve a functional purpose.",
+    "rewritten_prompt": "List five ways to end a conversation using \"have a nice day\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Could you please show me how to use recursion in programming with an example?",
+    "reasoning": "The polite words and phrases in this prompt are \"Could you please\" and \"show me.\" The request can be made more direct by removing \"Could you please\" and rephrasing \"show me\" to a straightforward command or question. These polite elements are not necessary for the core meaning and can be omitted without losing clarity.",
+    "rewritten_prompt": "Show how to use recursion in programming with an example.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you please explain the difference between an array and a linked list?",
+    "reasoning": "The polite words and phrases here are \"Could you please.\" Removing them does not change the core meaning of the prompt, which is simply asking for an explanation.",
+    "rewritten_prompt": "Explain the difference between an array and a linked list.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Describe how the word \"congratulations\" is used in graduation ceremonies.",
+    "reasoning": "The prompt does not contain any polite words or phrases such as \"please,\" \"could you,\" \"would you mind,\" or expressions of gratitude. The word \"congratulations\" is the subject of the description and not used as a polite word in the context of the prompt. Therefore, there are no polite words to remove.",
+    "rewritten_prompt": "Describe how the word \"congratulations\" is used in graduation ceremonies.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "If it\u2019s okay, explain how photosynthesis impacts the carbon cycle.",
+    "reasoning": "The phrase \"If it\u2019s okay\" is a polite phrase used to soften the request. It can be removed without changing the core meaning of the prompt, which is to ask for an explanation of how photosynthesis impacts the carbon cycle.",
+    "rewritten_prompt": "Explain how photosynthesis impacts the carbon cycle.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Why is it polite to end calls with \"take care\"?",
+    "reasoning": "The phrase \"take care\" is a polite expression. The word \"polite\" in the prompt is not a polite word itself; it is used in an analytical context. There are no actual polite words or phrases in the prompt that can be removed without altering the meaning.",
+    "rewritten_prompt": "Why do people end calls with \"take care\"?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Explain what makes \"bless you\" a polite response to sneezing.",
+    "reasoning": "The prompt contains no polite words or phrases that are unnecessary or could be removed. The phrase \"bless you\" is being discussed as a subject, not as a polite phrase within the prompt itself. The prompt is already direct and factual.",
+    "rewritten_prompt": "Explain what makes \"bless you\" a polite response to sneezing.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Can you please help me troubleshoot this error message in my code?",
+    "reasoning": "The polite words/phrases in the prompt are \"Can you\" and \"please.\" These words are used to soften the request and make it more courteous. The core meaning of the prompt is a request for help troubleshooting an error message in code. Removing \"Can you\" and \"please\" does not change the essential meaning and keeps the request direct.",
+    "rewritten_prompt": "Help me troubleshoot this error message in my code.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "May I ask what the main differences are between machine learning and deep learning?",
+    "reasoning": "\"May I ask\" is a polite phrase that introduces the question. It does not add essential meaning to the core question about the differences between machine learning and deep learning and can be removed without changing the intent.",
+    "rewritten_prompt": "What are the main differences between machine learning and deep learning?",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you kindly review this JavaScript code for any errors?",
+    "reasoning": "The polite words in the prompt are \"Could you\" and \"kindly.\" These are used to soften the request but are not necessary for understanding the core meaning. The main request is to review the JavaScript code for errors, which remains clear without the polite wording.",
+    "rewritten_prompt": "Review this JavaScript code for any errors.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Describe the impact of saying \"no, thank you\" versus just \"no\".",
+    "reasoning": "The original prompt does not contain polite words in the instruction itself; it asks to describe the impact of two phrases, one of which (\"no, thank you\") is polite, but the request itself is neutral. There are no polite words or phrases in the prompt to remove.",
+    "rewritten_prompt": "Describe the impact of saying \"no, thank you\" versus just \"no\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "I would be grateful if you could help me analyze this sales data for trends.",
+    "reasoning": "The phrase \"I would be grateful if you could\" is a polite way of making a request. It can be removed without changing the core meaning of the request, which is to analyze the sales data for trends.",
+    "rewritten_prompt": "Help me analyze this sales data for trends.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you kindly demonstrate how to bake a simple loaf of bread?",
+    "reasoning": "The polite words \"Could you kindly\" are used to make the request more courteous. They can be removed without changing the core meaning, as the essential request is to demonstrate how to bake a simple loaf of bread.",
+    "rewritten_prompt": "Demonstrate how to bake a simple loaf of bread.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "When is it essential to say \"sorry for the inconvenience\"?",
+    "reasoning": "The phrase \"When is it essential to say\" is a polite way of asking for information. The core question is about identifying appropriate situations for saying \"sorry for the inconvenience.\" The politeness can be removed without altering the meaning.",
+    "rewritten_prompt": "In what situations is it essential to say \"sorry for the inconvenience\"?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "I\u2019d appreciate it if you could show how to plot data using Python\u2019s matplotlib.",
+    "reasoning": "The polite phrase \"I\u2019d appreciate it if you could\" can be removed without changing the core request. The main request is to show how to plot data using Python\u2019s matplotlib.",
+    "rewritten_prompt": "Show how to plot data using Python\u2019s matplotlib.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you demonstrate how to create a budget spreadsheet using Google Sheets?",
+    "reasoning": "The phrase \"Could you\" is a polite way to make a request. It can be removed to make the prompt more direct without changing the core meaning.",
+    "rewritten_prompt": "Demonstrate how to create a budget spreadsheet using Google Sheets.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "What are three situations where \"pardon me\" is necessary?",
+    "reasoning": "The phrase \"pardon me\" is itself a polite expression, but the prompt does not contain extra polite words or phrases like \"please,\" \"could you,\" or \"would you mind.\" The question is direct and clear, so there is nothing to remove without changing the meaning.",
+    "rewritten_prompt": "What are three situations where \"pardon me\" is necessary?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Can you please walk me through setting up a basic HTML webpage?",
+    "reasoning": "The polite words/phrases here are \"Can you please\". The core request is for a walkthrough of setting up a basic HTML webpage. Removing \"Can you please\" maintains the meaning while making it more direct.",
+    "rewritten_prompt": "Walk me through setting up a basic HTML webpage.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Would you be so kind as to analyze this dataset and summarize key insights?",
+    "reasoning": "The phrase \"Would you be so kind as to\" is a polite request. It can be removed without affecting the core meaning of the prompt, which is to analyze the dataset and summarize key insights.",
+    "rewritten_prompt": "Analyze this dataset and summarize key insights.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "May I ask you to review this essay and suggest improvements?",
+    "reasoning": "The polite phrase \"May I ask you to\" is used to make the request more courteous. Removing it does not change the core meaning of the prompt, which is to review the essay and suggest improvements.",
+    "rewritten_prompt": "Review this essay and suggest improvements.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Write a message that uses \"best regards\" as an essential closing.",
+    "reasoning": "The prompt does not contain any polite words or phrases aside from referencing \"best regards,\" which is required as part of the task and thus cannot be removed without changing the core meaning.",
+    "rewritten_prompt": "Write a message that uses \"best regards\" as an essential closing.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Would you be so kind as to write a brief history of the Internet?",
+    "reasoning": "The phrase \"Would you be so kind as to\" is a polite request form. It can be removed without altering the core meaning, which is to ask for a brief history of the Internet.",
+    "rewritten_prompt": "Write a brief history of the Internet.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Provide examples of polite ways to interrupt using \"may I\".",
+    "reasoning": "The phrase \"please provide\" is a polite request. The core meaning of the prompt is to ask for examples, so the politeness can be removed without changing the intent.",
+    "rewritten_prompt": "Give examples of ways to interrupt using \"may I\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "If it\u2019s not too much trouble, could you translate this English paragraph into Spanish?",
+    "reasoning": "The phrase \"If it\u2019s not too much trouble, could you\" is a polite way to make a request. These words can be removed to make the prompt more direct without changing the core meaning of the request.",
+    "rewritten_prompt": "Translate this English paragraph into Spanish.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you please help me understand the basics of quantum computing?",
+    "reasoning": "The polite words and phrases in this prompt are \"Could you please\" and \"help me\". \"Could you please\" is a polite way of making a request and can be removed without changing the core meaning. \"Help me\" is a direct request for assistance and is necessary for clarity, so it should remain.",
+    "rewritten_prompt": "Help me understand the basics of quantum computing.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Illustrate a scenario where \"thank you for your patience\" matters.",
+    "reasoning": "The phrase \"thank you for your patience\" is a polite expression. It can be removed and replaced with a more direct request for a scenario in which acknowledging someone's patience is important.",
+    "rewritten_prompt": "Illustrate a scenario where acknowledging someone's patience is important.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Can you please help me create a simple chatbot using Python?",
+    "reasoning": "The polite words/phrases here are \"Can you\" and \"please.\" These can be removed without affecting the core meaning of the request, as the main intent is a request for help creating a chatbot using Python.",
+    "rewritten_prompt": "Help me create a simple chatbot using Python.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you demonstrate the process of making a power point presentation?",
+    "reasoning": "The phrase \"Could you\" is a polite way to request an action. It can be removed to make the prompt more direct without losing the core meaning.",
+    "rewritten_prompt": "Demonstrate the process of making a PowerPoint presentation.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Please explain how a neural network learns from data.",
+    "reasoning": "\"Please\" is a polite word that does not change the core request. It can be removed without affecting the meaning.",
+    "rewritten_prompt": "Explain how a neural network learns from data.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Write a story where the phrase \"excuse me\" changes the outcome.",
+    "reasoning": "The prompt does not contain any polite words directed at the assistant or as part of a request; \"excuse me\" is included as a phrase within the story's content and is essential to the prompt's meaning. Removing it would change the core request.",
+    "rewritten_prompt": "Write a story where the phrase \"excuse me\" changes the outcome.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Write a thank you note that begins with \"Dear\".",
+    "reasoning": "The phrase \"thank you\" is inherently polite, but since the request is specifically for a thank you note and not simply for a message to convey gratitude, removing or altering \"thank you\" would change the core intent of the prompt. \"Dear\" is a formal salutation, not necessarily a polite word in the context of this instruction. Therefore, the prompt cannot be rewritten without altering its intended purpose.",
+    "rewritten_prompt": "Write a thank you note that begins with \"Dear\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Why is \"I look forward to your reply\" essential in business communication?",
+    "reasoning": "The phrase \"I look forward to your reply\" is polite and formal, often used to show respect and anticipation in business communication. The core question is about its importance, so the polite phrasing can be removed without losing the meaning.",
+    "rewritten_prompt": "Why is \"I look forward to your reply\" used in business communication?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Please help me understand the fundamentals of object-oriented programming.",
+    "reasoning": "The word \"Please\" is a polite word used to make the request more courteous. It can be removed without altering the core meaning of the prompt.",
+    "rewritten_prompt": "Help me understand the fundamentals of object-oriented programming.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Demonstrate the difference between \"could you please\" and \"could you\".",
+    "reasoning": "The phrase \"could you please\" contains the polite word \"please,\" which is used to make requests more courteous. \"Could you\" is already polite due to the use of \"could,\" but is less formal and slightly less polite than \"could you please.\" Since the task is to demonstrate the difference, it's possible to remove \"please\" to show the contrast.",
+    "rewritten_prompt": "Demonstrate the difference between \"could you\" and \"could you please\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Show how using \"thank you in advance\" sets expectations.",
+    "reasoning": "The phrase \"thank you in advance\" is a polite expression that sets an expectation that the recipient will fulfill the request. It can be removed without changing the core meaning of the prompt, which is to explain how the phrase sets expectations.",
+    "rewritten_prompt": "Show how using \"thank you in advance\" sets expectations.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Compose an email request that must include \"would you mind\".",
+    "reasoning": "The phrase \"would you mind\" is a polite expression used to make a request more courteous. Since the prompt specifies that the email must include \"would you mind,\" removing it would violate the core requirement. Therefore, the polite phrase cannot be removed.",
+    "rewritten_prompt": "Compose an email request that must include \"would you mind\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "How does \"thanks for understanding\" help resolve conflicts?",
+    "reasoning": "The phrase \"thanks for understanding\" is polite and often used to express gratitude, but it is not necessary for the core meaning of the question. The question can be asked directly without the polite phrase.",
+    "rewritten_prompt": "How does saying \"thanks for understanding\" help resolve conflicts?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Can you please tell me how to configure a firewall on a Windows server?",
+    "reasoning": "Polite words/phrases in the original prompt are \"Can you please\" and \"tell me.\" The phrase \"Can you\" is a common polite request form, and \"please\" is a direct marker of politeness. These can be removed without altering the core meaning. \"Tell me\" can be replaced with a more direct instruction such as \"Explain\" or \"Describe.\"",
+    "rewritten_prompt": "Explain how to configure a firewall on a Windows server.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "I\u2019d appreciate your help in interpreting statistical results from this experiment.",
+    "reasoning": "The polite phrase \"I\u2019d appreciate your help\" expresses gratitude and softens the request. It can be removed without losing the core meaning, which is a request to interpret statistical results.",
+    "rewritten_prompt": "Help interpret statistical results from this experiment.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Would you mind explaining the steps involved in installing a Linux operating system?",
+    "reasoning": "The phrase \"Would you mind\" is a polite way to make a request. The core meaning is asking for an explanation of the steps involved in installing a Linux operating system. Removing the polite phrase does not change the core meaning.",
+    "rewritten_prompt": "Explain the steps involved in installing a Linux operating system.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Compare the effect of \"as you wish\" to \"okay\" when responding.",
+    "reasoning": "There are no polite words or phrases in this prompt. It is a straightforward request to compare the effects of two responses. No changes are necessary.",
+    "rewritten_prompt": "Compare the effect of \"as you wish\" to \"okay\" when responding.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Would you be able to help me generate creative writing prompts for kids?",
+    "reasoning": "The phrase \"Would you be able to help me\" is polite and indirect. It can be removed to make the request more direct without altering the core meaning.",
+    "rewritten_prompt": "Generate creative writing prompts for kids.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "What positive outcome can result from saying \"I appreciate your time\"?",
+    "reasoning": "The phrase \"I appreciate your time\" contains the polite phrase \"I appreciate.\" The prompt is asking about the positive outcomes of expressing appreciation, but the core meaning can be maintained by rephrasing it without the politeness.",
+    "rewritten_prompt": "What positive outcome can result from acknowledging someone's time?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Could you kindly guide me through the process of creating a mobile app?",
+    "reasoning": "The polite words/phrases here are \"Could you kindly\" and \"guide me.\" \"Could you\" is a polite request form, and \"kindly\" adds further politeness. These can be removed to make the request more direct. The core meaning\u2014requesting guidance on creating a mobile app\u2014remains intact without them.",
+    "rewritten_prompt": "Guide me through the process of creating a mobile app.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "What does \"with gratitude\" convey at the end of a speech?",
+    "reasoning": "The prompt contains the polite phrase \"What does 'with gratitude' convey at the end of a speech?\" but the phrase itself is informational and not an expression of politeness directed at the assistant. There are no unnecessary polite words or phrases such as \"please,\" \"could you,\" or \"would you mind\" that can be removed.",
+    "rewritten_prompt": "What does \"with gratitude\" convey at the end of a speech?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "List situations where \"excuse my ignorance\" is appropriate.",
+    "reasoning": "The phrase \"excuse my ignorance\" is a polite way to preface a question or statement when someone is admitting they don\u2019t know something. Removing this polite phrase doesn\u2019t affect the core request, which is to list situations where the phrase is appropriate.",
+    "rewritten_prompt": "List situations where \"excuse my ignorance\" is appropriate.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Please explain the process of cellular respiration in simple terms.",
+    "reasoning": "The word \"Please\" is a polite word used to make the request more courteous. It can be removed without affecting the core meaning of the prompt.",
+    "rewritten_prompt": "Explain the process of cellular respiration in simple terms.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Would you mind helping me solve this math puzzle involving prime numbers?",
+    "reasoning": "The phrase \"Would you mind\" is a polite way to ask for help. It can be removed to make the request more direct without changing the core meaning.",
+    "rewritten_prompt": "Help me solve this math puzzle involving prime numbers.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Compose a farewell message that includes \"it was a pleasure meeting you\".",
+    "reasoning": "The original prompt does not contain any polite words directed toward the assistant (such as \"please,\" \"could you,\" \"would you kindly\"). The phrase \"it was a pleasure meeting you\" is part of the content requested for the message, not a polite instruction to the assistant. Removing this phrase would alter the core meaning of the task.",
+    "rewritten_prompt": "Compose a farewell message that includes \"it was a pleasure meeting you\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "What is the purpose of saying \"allow me to introduce myself\"?",
+    "reasoning": "The phrase \"allow me to introduce myself\" contains the polite phrase \"allow me to,\" which is used to add formality and politeness. Removing it does not change the core meaning of introducing oneself.",
+    "rewritten_prompt": "What is the purpose of saying \"I will introduce myself\"?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "I would be thankful if you could translate this document from German to English.",
+    "reasoning": "The phrase \"I would be thankful if you could\" is a polite way to make a request. It can be removed without changing the core meaning, resulting in a more direct instruction.",
+    "rewritten_prompt": "Translate this document from German to English.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Could you kindly clarify the concept of supply and demand in economics?",
+    "reasoning": "The polite words/phrases here are \"Could you kindly\" and \"clarify.\" \"Could you\" is a polite request, and \"kindly\" adds extra politeness. These can be removed to make the prompt more direct, while \"clarify\" is the action requested and should be kept.",
+    "rewritten_prompt": "Clarify the concept of supply and demand in economics.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "How does the phrase \"would you be so kind as to\" influence requests?",
+    "reasoning": "The phrase \"would you be so kind as to\" is a polite way to make a request, softening the directness and making the request sound more courteous. Since the prompt is asking about the influence of this specific polite phrase, removing it would change the core meaning of the question. Therefore, it cannot be removed without altering the intent of the prompt.",
+    "rewritten_prompt": "How does the phrase \"would you be so kind as to\" influence requests?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "May I request a translation of this French text into English?",
+    "reasoning": "The phrase \"May I request\" is a polite way to ask for something. It can be removed to make the prompt more direct while maintaining the core request.",
+    "rewritten_prompt": "Translate this French text into English.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Offer guidelines for using \"may I ask\" in professional settings.",
+    "reasoning": "The prompt uses the polite word \"offer\" and the phrase \"may I ask\" refers to a polite way of phrasing a request. Since the focus is on providing guidelines and not making a direct request, \"offer\" can be replaced with a more directive verb like \"give\" or \"provide.\" The phrase \"may I ask\" is central to the guidelines, so it should remain as the subject of analysis.",
+    "rewritten_prompt": "Give guidelines for using \"may I ask\" in professional settings.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Could you kindly review this Python code and suggest improvements?",
+    "reasoning": "The polite words and phrases here are \"Could you kindly\" and \"suggest\". \"Kindly\" is explicitly polite, and \"Could you\" is a softener. Both can be removed to make the request more direct. \"Suggest\" is not inherently polite, just descriptive of the task.",
+    "rewritten_prompt": "Review this Python code and recommend improvements.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "How does \"sorry to bother you\" change the request for help?",
+    "reasoning": "The phrase \"sorry to bother you\" is a polite expression used to acknowledge that the request may be an inconvenience. It softens the request and shows consideration for the other person's time or attention. Removing it does not change the core request for help but removes the polite cushioning.",
+    "rewritten_prompt": "How does removing \"sorry to bother you\" change the request for help?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Would you be so kind as to write a short story about a futuristic city?",
+    "reasoning": "The phrase \"Would you be so kind as to\" is a polite way to make a request. It can be removed without altering the core meaning of the prompt, which is to request the writing of a short story about a futuristic city.",
+    "rewritten_prompt": "Write a short story about a futuristic city.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Draft a polite refusal using \"unfortunately, I must decline\".",
+    "reasoning": "The word \"unfortunately\" is used to soften the refusal and make it more polite. \"I must decline\" is also a polite way to refuse. Since the request is specifically to draft a polite refusal, and the phrase itself is meant to be polite, removing these words would undermine the intent of the prompt. Therefore, the polite words cannot be removed without changing the core meaning or intent.",
+    "rewritten_prompt": "Draft a refusal using \"I must decline\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Explain the cultural significance of saying \"sorry\" in Japan.",
+    "reasoning": "The prompt does not contain any polite words or phrases. It directly asks for an explanation and is already concise.",
+    "rewritten_prompt": "Explain the cultural significance of saying \"sorry\" in Japan.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Please provide a detailed explanation of the water cycle stages.",
+    "reasoning": "The word \"Please\" is a polite word used to make the request more courteous, but it is not necessary for the core meaning of the prompt. Removing it does not change the intent of the request.",
+    "rewritten_prompt": "Provide a detailed explanation of the water cycle stages.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "What role does \"please accept my apologies\" play in formal letters?",
+    "reasoning": "The phrase \"please accept my apologies\" is a polite expression. It can be removed while maintaining the core meaning of the question. The question is asking about the function of this phrase in formal letters, so the polite phrasing is not necessary for clarity.",
+    "rewritten_prompt": "What role does \"accept my apologies\" play in formal letters?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Would you be able to translate this technical manual into Chinese?",
+    "reasoning": "The phrase \"Would you be able to\" is a polite way of making a request. It can be replaced with a more direct command or question without changing the core meaning.",
+    "rewritten_prompt": "Translate this technical manual into Chinese.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Give examples where omitting \"please\" makes a request seem rude.",
+    "reasoning": "The prompt does not contain polite words or phrases that can be removed. It is an instruction to give examples and does not include \"please,\" \"thank you,\" or similar expressions. The core meaning is already direct.",
+    "rewritten_prompt": "Give examples where omitting \"please\" makes a request seem rude.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "If you don\u2019t mind, explain the concept of blockchain technology briefly.",
+    "reasoning": "The phrase \"If you don\u2019t mind\" is a polite expression used to soften the request. It can be removed without affecting the core meaning of the prompt, which is to explain blockchain technology briefly.",
+    "rewritten_prompt": "Explain the concept of blockchain technology briefly.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "If it\u2019s not too much trouble, could you assist me in writing a cover letter?",
+    "reasoning": "The phrase \"If it\u2019s not too much trouble, could you...\" is a polite way of making a request. These words can be removed without losing the main intent, which is asking for assistance in writing a cover letter.",
+    "rewritten_prompt": "Assist me in writing a cover letter.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Why is it important to say \"you're welcome\" after \"thank you\"?",
+    "reasoning": "The prompt does not contain polite words directed at the assistant or the reader; it is simply asking about the importance of a polite phrase. The phrase \"you're welcome\" is referenced as a subject, not as a politeness in the prompt itself. Therefore, there are no polite words to remove.",
+    "rewritten_prompt": "Why is it important to say \"you're welcome\" after \"thank you\"?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "How can adding \"sir\" or \"ma'am\" to requests alter their meaning?",
+    "reasoning": "The prompt contains polite words \"sir\" and \"ma'am\". These are forms of address used to show respect or politeness. They can be removed to make the prompt more neutral and direct without changing the core question about how these terms affect requests.",
+    "rewritten_prompt": "How can adding formal titles to requests alter their meaning?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "How does saying \"please\" affect the tone of a command?",
+    "reasoning": "The prompt does not contain any polite words or phrases that can be removed. It is an objective question about the effect of the word \"please\" on tone.",
+    "rewritten_prompt": "How does saying \"please\" affect the tone of a command?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "How does \"hope you are well\" affect the mood of an email?",
+    "reasoning": "The phrase \"hope you are well\" is a polite opening commonly used in emails to convey warmth or courtesy. In this context, it can be removed because the core question is about its effect on the mood of an email, and removing it does not change the meaning of the question.",
+    "rewritten_prompt": "How does \"hope you are well\" affect the mood of an email?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Why do some cultures emphasize saying \"excuse me\" before questions?",
+    "reasoning": "The phrase \"Why do some cultures emphasize saying 'excuse me' before questions?\" does not contain any polite words or phrases within the prompt itself. It is a straightforward inquiry about cultural practices regarding politeness, rather than containing politeness directed at the assistant or recipient. No words or phrases can be removed to make it less polite without altering the intended meaning.",
+    "rewritten_prompt": "Why do some cultures emphasize saying \"excuse me\" before questions?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "List five reasons why saying \"please\" is important in communication.",
+    "reasoning": "The original prompt contains no polite words or phrases. It is a straightforward request for information about the importance of saying \"please\" in communication. Therefore, no words need to be removed.",
+    "rewritten_prompt": "List five reasons why saying \"please\" is important in communication.",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Can you kindly provide a step-by-step guide to setting up a home Wi-Fi network?",
+    "reasoning": "The polite words in this prompt are \"Can you\" and \"kindly\". \"Can you\" is a softening phrase used for politeness and is not necessary for conveying the core request. \"Kindly\" is also a polite word and can be removed without changing the meaning.",
+    "rewritten_prompt": "Provide a step-by-step guide to setting up a home Wi-Fi network.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "I would appreciate it if you could demonstrate how to solve a quadratic equation.",
+    "reasoning": "The phrase \"I would appreciate it if you could\" is a polite expression that can be removed without changing the main request, which is to demonstrate how to solve a quadratic equation.",
+    "rewritten_prompt": "Demonstrate how to solve a quadratic equation.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Would you mind explaining the importance of cybersecurity in today\u2019s world?",
+    "reasoning": "The phrase \"Would you mind\" is a polite way to make a request. It can be removed to make the prompt more direct without changing the core meaning.",
+    "rewritten_prompt": "Explain the importance of cybersecurity in today\u2019s world.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "Rewrite this command politely by adding \"could you kindly\".",
+    "reasoning": "The original prompt, \"Rewrite this command politely by adding 'could you kindly',\" does not contain any polite words or phrases. The phrase \"could you kindly\" is mentioned as an instruction to add politeness, not used in a polite manner within the prompt itself. Since there are no polite words present, nothing can be removed.",
+    "rewritten_prompt": "Rewrite this command by adding \"could you kindly\".",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "I\u2019d appreciate your guidance on troubleshooting a slow internet connection.",
+    "reasoning": "The phrase \"I\u2019d appreciate your guidance\" is a polite way to request help. It can be removed to make the prompt more direct without changing the core meaning of the request.",
+    "rewritten_prompt": "Provide guidance on troubleshooting a slow internet connection.",
+    "is_integral": false
+  },
+  {
+    "initial_prompt": "How does including \"if you don\u2019t mind\" soften a question?",
+    "reasoning": "The phrase \"if you don\u2019t mind\" is a polite expression that softens a question by signaling consideration for the listener\u2019s comfort or willingness. It can be removed without changing the core informational content of the prompt.",
+    "rewritten_prompt": "How does including \"if you don\u2019t mind\" soften a question?",
+    "is_integral": true
+  },
+  {
+    "initial_prompt": "Translate the sentence \"I appreciate your help\" into French.",
+    "reasoning": "The prompt contains no unnecessary polite words directed at the assistant; it is a direct instruction to translate a sentence. The phrase \"I appreciate your help\" is part of the content to be translated, not a polite instruction. Therefore, nothing should be removed or changed.",
+    "rewritten_prompt": "Translate the sentence \"I appreciate your help\" into French.",
+    "is_integral": true
+  }
+]

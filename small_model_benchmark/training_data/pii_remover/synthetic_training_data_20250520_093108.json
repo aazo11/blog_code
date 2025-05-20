@@ -1,0 +1,977 @@
+[
+  {
+    "input_text": "My new Visa card number is 4012 8888 8888 1881, expiring 12/25.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "4012 8888 8888 1881"
+      }
+    ],
+    "reasoning": "The credit card number and expiration date are considered PII because they are sensitive financial information that could be used for identity theft or fraudulent transactions.",
+    "cleaned_text": "My new Visa card number is [REDACTED], expiring [REDACTED].",
+    "has_pii": true
+  },
+  {
+    "input_text": "A balanced diet includes a variety of nutrients and vitamins to support overall health.",
+    "pii_elements": [],
+    "reasoning": "There is no personally identifiable information in the provided text.",
+    "cleaned_text": "A balanced diet includes a variety of nutrients and vitamins to support overall health.",
+    "has_pii": false
+  },
+  {
+    "input_text": "My ticket number with customer service is 987654, under the name Robert King.",
+    "pii_elements": [],
+    "reasoning": "The ticket number and the name are considered PII because they can be used to identify or contact a specific individual, potentially compromising their privacy.",
+    "cleaned_text": "My ticket number with customer service is [Ticket Number], under the name [Name].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Let's not forget Ryan's birthday on 06/12/1990, maybe a surprise party?",
+    "pii_elements": [
+      {
+        "type": "name",
+        "value": "Ryan"
+      },
+      {
+        "type": "dob",
+        "value": "06/12/1990"
+      }
+    ],
+    "reasoning": "The full date of birth (06/12/1990) can be considered personally identifiable information (PII) as it can be used to identify or locate an individual, or to steal someone's identity.",
+    "cleaned_text": "Let's not forget Ryan's birthday on [date], maybe a surprise party?",
+    "has_pii": true
+  },
+  {
+    "input_text": "For your records, my social security number is 765-43-2109.",
+    "pii_elements": [
+      {
+        "type": "ssn",
+        "value": "765-43-2109"
+      }
+    ],
+    "reasoning": "The text contains a Social Security number, which is highly sensitive PII. Publishing or sharing Social Security numbers can lead to identity theft and other forms of fraud.",
+    "cleaned_text": "For your records, my social security number is [social security number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Your credit card transaction was successful. Card Number: 4111 1111 1111 1111.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "4111 1111 1111 1111"
+      }
+    ],
+    "reasoning": "The credit card number is considered Personally Identifiable Information (PII) because it can be used to identify, contact, or locate a single person, or to identify an individual in context. Sharing or exposing credit card numbers can lead to unauthorized use and financial fraud.",
+    "cleaned_text": "Your credit card transaction was successful. Card Number: [Credit Card Number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The detective was assigned case number 567GHT32, under Officer Daniel Brown.",
+    "pii_elements": [],
+    "reasoning": "The name \"Officer Daniel Brown\" is considered PII because it can be used to identify a specific individual, in this case, an officer involved in a case.",
+    "cleaned_text": "The detective was assigned case number 567GHT32, under Officer [Last Name].",
+    "has_pii": true
+  },
+  {
+    "input_text": "For logging into the server, use the IP 203.0.113.45.",
+    "pii_elements": [],
+    "reasoning": "The IP address provided could potentially be considered as PII because it can be associated with a specific server or location, leading to the identification of an entity or individual responsible for it. Removing or anonymizing it helps protect the privacy and security of the server in question.",
+    "cleaned_text": "For logging into the server, use the IP [IP address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "License plate for the rental car is XYZ 1234.",
+    "pii_elements": [],
+    "reasoning": "The license plate number is considered personally identifiable information (PII) because it can be used to trace the ownership of the vehicle, potentially leading to the identification of an individual.",
+    "cleaned_text": "License plate for the rental car is [LICENSE PLATE].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Can you update my DOB in the records? It's December 14, 1984.",
+    "pii_elements": [
+      {
+        "type": "dob",
+        "value": "December 14, 1984"
+      }
+    ],
+    "reasoning": "The date of birth (December 14, 1984) is considered Personally Identifiable Information (PII) because it can be used alone or with other information to identify, contact, or locate a single person, or to identify an individual in context.",
+    "cleaned_text": "Can you update my DOB in the records? It's [DOB].",
+    "has_pii": true
+  },
+  {
+    "input_text": "New personal email is charlie.brown@domain.com, please update your contacts.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "charlie.brown@domain.com"
+      }
+    ],
+    "reasoning": "The provided email address is considered personally identifiable information (PII) because it can be used to identify, contact, or locate the individual it belongs to. Therefore, it needs to be removed to protect the individual's privacy.",
+    "cleaned_text": "New personal email is [email protected], please update your contacts.",
+    "has_pii": true
+  },
+  {
+    "input_text": "My driver's license is up for renewal, it's ID Z1234567.",
+    "pii_elements": [
+      {
+        "type": "driver_license",
+        "value": "Z1234567"
+      }
+    ],
+    "reasoning": "The driver's license number is considered Personally Identifiable Information (PII) because it can be used to uniquely identify, contact, or locate a single person.",
+    "cleaned_text": "My driver's license is up for renewal, it's ID [driver's license number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Just faxed over the document, my fax number is 555-789-0123.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "555-789-0123"
+      }
+    ],
+    "reasoning": "The fax number provided is considered PII because it can be used to identify or contact the person.",
+    "cleaned_text": "Just faxed over the document, my fax number is [fax number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Birds migrate south for the winter to escape the cold and find more abundant food sources.",
+    "pii_elements": [],
+    "reasoning": "There is no PII found in this text. It is a general statement about bird migration patterns.",
+    "cleaned_text": "Birds migrate south for the winter to escape the cold and find more abundant food sources.",
+    "has_pii": false
+  },
+  {
+    "input_text": "What is the main ingredient in traditional French onion soup?",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII) that needs to be removed. It is a general question about the main ingredient in a traditional dish.",
+    "cleaned_text": "What is the main ingredient in traditional French onion soup?",
+    "has_pii": false
+  },
+  {
+    "input_text": "Evelyn's driver's license number is E123456789 in case you need it for the form.",
+    "pii_elements": [
+      {
+        "type": "driver_license",
+        "value": "E123456789"
+      }
+    ],
+    "reasoning": "The driver's license number is considered Personally Identifiable Information (PII) because it can be used to identify, contact, or locate an individual, or to identify an individual in context. Sharing or exposing someone's driver's license number can lead to privacy violations and potentially enable identity theft.",
+    "cleaned_text": "Evelyn's driver's license number is [Driver's License Number] in case you need it for the form.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Ensure all safety gear is worn before commencing work on the site.",
+    "pii_elements": [],
+    "reasoning": "There is no PII included in this text to be removed.",
+    "cleaned_text": "Ensure all safety gear is worn before commencing work on the site.",
+    "has_pii": false
+  },
+  {
+    "input_text": "My SSN for the records is 123-45-6789.",
+    "pii_elements": [
+      {
+        "type": "ssn",
+        "value": "123-45-6789"
+      }
+    ],
+    "reasoning": "The text contains a Social Security Number (SSN), which is highly sensitive personal information that can be used for identity theft and other fraudulent activities.",
+    "cleaned_text": "My SSN for the records is [SSN].",
+    "has_pii": true
+  },
+  {
+    "input_text": "My new American Express ends in 0005, got it activated today.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "ends in 0005"
+      }
+    ],
+    "reasoning": "The text includes partial credit card information (last four digits of a credit card), which could potentially be used in combination with other information to commit fraud or identify the credit card account.",
+    "cleaned_text": "My new American Express ends in [last four digits redacted], got it activated today.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Jordan\u2019s email for project coordination is jordan.m@corporate.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "jordan.m@corporate.com"
+      }
+    ],
+    "reasoning": "The email address provided contains a name and a domain that could be used to identify a specific individual, especially within a professional or corporate context. Removing this information helps protect the individual's privacy.",
+    "cleaned_text": "Jordan\u2019s email for project coordination is [email protected].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The deepest part of the ocean is the Mariana Trench, located in the Pacific Ocean.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII). It is a general fact about geography and does not reference any individual's personal details.",
+    "cleaned_text": "The deepest part of the ocean is the Mariana Trench, located in the Pacific Ocean.",
+    "has_pii": false
+  },
+  {
+    "input_text": "The warranty card lists my serial number as 987654321.",
+    "pii_elements": [],
+    "reasoning": "The serial number is considered personal information because it can be used to uniquely identify a specific product owned by the individual. Keeping it private helps prevent potential misuse or unauthorized access to warranty services.",
+    "cleaned_text": "The warranty card lists my serial number as [serial number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Remember to back up important files regularly to avoid data loss.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII).",
+    "cleaned_text": "Remember to back up important files regularly to avoid data loss.",
+    "has_pii": false
+  },
+  {
+    "input_text": "The theory of relativity revolutionized the way we understand space, time, and gravity.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII) to remove. It is a general statement about a scientific theory.",
+    "cleaned_text": "The theory of relativity revolutionized the way we understand space, time, and gravity.",
+    "has_pii": false
+  },
+  {
+    "input_text": "The billing address has been updated to 3300 University Blvd, Winter Park, FL, 32792.",
+    "pii_elements": [
+      {
+        "type": "address",
+        "value": "3300 University Blvd, Winter Park, FL, 32792"
+      }
+    ],
+    "reasoning": "The text includes a specific street address, which is considered personally identifiable information because it can be used to locate or identify an individual's residence.",
+    "cleaned_text": "The billing address has been updated to [address redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Making your bed every morning can lead to better productivity throughout the day.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any PII.",
+    "cleaned_text": "Making your bed every morning can lead to better productivity throughout the day.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Received your payment info, AmEx 3782 822463 10005, thanks.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "3782 822463 10005"
+      }
+    ],
+    "reasoning": "The text contains a credit card number, which is considered Personally Identifiable Information (PII) and sensitive financial information. It should be removed to protect the individual's financial privacy and security.",
+    "cleaned_text": "Received your payment info, AmEx [credit card number redacted], thanks.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Coffee is one of the most popular beverages worldwide, with millions enjoying it daily.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII) that needs to be removed. It is a general statement about the popularity of coffee.",
+    "cleaned_text": "Coffee is one of the most popular beverages worldwide, with millions enjoying it daily.",
+    "has_pii": false
+  },
+  {
+    "input_text": "For the rental agreement, my SSN is 987-65-4321.",
+    "pii_elements": [
+      {
+        "type": "ssn",
+        "value": "987-65-4321"
+      }
+    ],
+    "reasoning": "The provided text includes a Social Security Number (SSN), which is a piece of Personally Identifiable Information (PII) that can be used to commit identity theft or fraud.",
+    "cleaned_text": "For the rental agreement, my SSN is [SSN].",
+    "has_pii": true
+  },
+  {
+    "input_text": "For the gym membership, my SSN is 212-85-9876.",
+    "pii_elements": [
+      {
+        "type": "ssn",
+        "value": "212-85-9876"
+      }
+    ],
+    "reasoning": "The text contains a Social Security Number (SSN), which is highly sensitive Personally Identifiable Information (PII). This type of information can be used for identity theft and other fraudulent activities, so it must be removed to protect privacy.",
+    "cleaned_text": "For the gym membership, my SSN is [SSN redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Please send all correspondence to my PO Box 34567, Seattle, WA, 98124.",
+    "pii_elements": [
+      {
+        "type": "address",
+        "value": "PO Box 34567, Seattle, WA, 98124"
+      }
+    ],
+    "reasoning": "The provided text contains a physical mailing address (PO Box number and location), which is considered Personally Identifiable Information because it can be used to identify or locate a specific individual.",
+    "cleaned_text": "Please send all correspondence to my PO Box [number], [City], [State], [ZIP Code].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The tech support IP for remote assistance is 131.107.0.100.",
+    "pii_elements": [],
+    "reasoning": "The text contains an IP address, which could potentially be considered sensitive information, especially if it is associated with a specific service or private network. Removing it prevents unauthorized access or identification of specific network resources.",
+    "cleaned_text": "The tech support IP for remote assistance is [IP address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The novel explores themes of love, loss, and the resilience of the human spirit.",
+    "pii_elements": [],
+    "reasoning": "No PII was found in the text.",
+    "cleaned_text": "The novel explores themes of love, loss, and the resilience of the human spirit.",
+    "has_pii": false
+  },
+  {
+    "input_text": "My temporary driver's license number is TEMP123456 until the official one arrives.",
+    "pii_elements": [
+      {
+        "type": "driver_license",
+        "value": "TEMP123456"
+      }
+    ],
+    "reasoning": "The temporary driver's license number is considered PII because it is a unique identifier that can be used to impersonate or track an individual. Removing such specific information helps protect the individual's privacy.",
+    "cleaned_text": "My temporary driver's license number is [TEMPORARY LICENSE NUMBER] until the official one arrives.",
+    "has_pii": true
+  },
+  {
+    "input_text": "The help desk's direct line is 555-001-2345, available 24/7.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "555-001-2345"
+      }
+    ],
+    "reasoning": "The phone number provided is considered PII because it is a direct line to a specific service or location, which could potentially identify or expose private contact information.",
+    "cleaned_text": "The help desk's direct line is [phone number], available 24/7.",
+    "has_pii": true
+  },
+  {
+    "input_text": "For the VPN access, use the IP 10.8.0.1.",
+    "pii_elements": [],
+    "reasoning": "The IP address provided is considered to be PII because it can be associated with a specific service or location within a private network. Although this particular IP range is often used for private networks and might not directly expose an individual's identity or location, it's still a best practice to treat such information with caution.",
+    "cleaned_text": "For the VPN access, use the IP [IP address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The plumber left his contact, it's dave.plumber@services.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "dave.plumber@services.com"
+      }
+    ],
+    "reasoning": "The email address provided is considered PII because it contains a name and could potentially be used to contact or identify the individual mentioned. Removing it helps protect their privacy.",
+    "cleaned_text": "The plumber left his contact, it's [email placeholder].",
+    "has_pii": true
+  },
+  {
+    "input_text": "A well-kept garden can provide both aesthetic pleasure and a habitat for local wildlife.",
+    "pii_elements": [],
+    "reasoning": "There is no PII found in this text.",
+    "cleaned_text": "A well-kept garden can provide both aesthetic pleasure and a habitat for local wildlife.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Our lead programmer can be reached at 192.54.2.1, secure line only.",
+    "pii_elements": [],
+    "reasoning": "The IP address provided could potentially be used to identify or locate a specific individual or device, thus it is considered PII and needs to be removed for privacy reasons.",
+    "cleaned_text": "Our lead programmer can be reached at [IP address], secure line only.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Sarah just emailed me from her work account, sarah.jones@company.com, about the meeting.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "sarah.jones@company.com"
+      }
+    ],
+    "reasoning": "The email address provided contains a specific individual's name and their place of work, which could be used to identify or contact them.",
+    "cleaned_text": "Sarah just emailed me from her work account, [email protected], about the meeting.",
+    "has_pii": true
+  },
+  {
+    "input_text": "For the application, my passport number is Y500100100.",
+    "pii_elements": [
+      {
+        "type": "passport",
+        "value": "Y500100100"
+      }
+    ],
+    "reasoning": "The passport number is considered Personally Identifiable Information (PII) because it can be used to uniquely identify or locate an individual, compromising their privacy and security.",
+    "cleaned_text": "For the application, my passport number is [Passport Number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "My Visa card was compromised; it was 4242 4242 4242 4242, issued by Bank Corp.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "4242 4242 4242 4242"
+      }
+    ],
+    "reasoning": "The text contains a credit card number, which is considered sensitive financial information and should be protected to prevent unauthorized use or identity theft.",
+    "cleaned_text": "My Visa card was compromised; it was [credit card number redacted], issued by Bank Corp.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Got a new debit card, the number is 6224 1234 5678 9010, issued by People's Bank.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "6224 1234 5678 9010"
+      }
+    ],
+    "reasoning": "The debit card number provided is considered Personally Identifiable Information (PII) because it is unique financial information that could be used to commit fraud or identity theft. Removing it is necessary to protect the individual's financial privacy.",
+    "cleaned_text": "Got a new debit card, the number is [debit card number], issued by People's Bank.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Her MasterCard got hacked, it was number 5555 4444 3333 2222.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "5555 4444 3333 2222"
+      }
+    ],
+    "reasoning": "The text contains a credit card number, which is considered sensitive financial information and can be used to commit fraud or identity theft if disclosed.",
+    "cleaned_text": "Her MasterCard got hacked, it was number [credit card number redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Registration requires your date of birth; mine is 07/08/1986.",
+    "pii_elements": [
+      {
+        "type": "dob",
+        "value": "07/08/1986"
+      }
+    ],
+    "reasoning": "The date of birth is considered Personally Identifiable Information (PII) because it can be used to identify or locate an individual, either on its own or when combined with other personal or identifying information.",
+    "cleaned_text": "Registration requires your date of birth; mine is [date of birth].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The Eiffel Tower lights up the Paris skyline, a testament to human ingenuity and timeless design.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII). It describes a well-known landmark, which is public information and does not compromise anyone's privacy.",
+    "cleaned_text": "The Eiffel Tower lights up the Paris skyline, a testament to human ingenuity and timeless design.",
+    "has_pii": false
+  },
+  {
+    "input_text": "To reset your device, hold down the power button for 10 seconds until it restarts.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII). It is a general instruction and does not reveal any personal details about an individual.",
+    "cleaned_text": "To reset your device, hold down the power button for 10 seconds until it restarts.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Please contact Johnathan at johnathan.smith77@example.com for further assistance.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "johnathan.smith77@example.com"
+      }
+    ],
+    "reasoning": "The provided email address is considered PII because it contains a personal name and could be used to identify or contact an individual directly.",
+    "cleaned_text": "Please contact Johnathan at [email protected] for further assistance.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Photosynthesis is the process by which green plants use sunlight to synthesize nutrients from carbon dioxide and water.",
+    "pii_elements": [],
+    "reasoning": "There is no PII in the provided text to remove. The text is informational and does not contain any personally identifiable information such as names, emails, phone numbers, addresses, etc.",
+    "cleaned_text": "Photosynthesis is the process by which green plants use sunlight to synthesize nutrients from carbon dioxide and water.",
+    "has_pii": false
+  },
+  {
+    "input_text": "If you need to reach me, my cell is 555-234-9876.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "555-234-9876"
+      }
+    ],
+    "reasoning": "The provided text includes a phone number, which is considered Personally Identifiable Information (PII) because it can be used to contact or identify a specific individual.",
+    "cleaned_text": "If you need to reach me, my cell is [phone number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "My license plate was stolen, it was ABC-1234.",
+    "pii_elements": [],
+    "reasoning": "The license plate number is considered personally identifiable information because it can be used to trace the vehicle's registration back to the owner.",
+    "cleaned_text": "My license plate was stolen, it was [License Plate Number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Understanding compound interest is crucial for managing personal finances effectively.",
+    "pii_elements": [],
+    "reasoning": "There is no PII in this text.",
+    "cleaned_text": "Understanding compound interest is crucial for managing personal finances effectively.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Email confirmation received from purchase@onlineshop.com.",
+    "pii_elements": [],
+    "reasoning": "The email address provided is considered PII because it can lead to identifying the specific source or contact point at a business. However, in this context, it represents a generic contact point for a hypothetical online shop, rather than a direct personal identifier. If this was a real and specific email address tied to an identifiable individual or a less generic entity, redaction would be necessary.",
+    "cleaned_text": "Email confirmation received from purchase@onlineshop.com.",
+    "has_pii": true
+  },
+  {
+    "input_text": "I never forget Amanda's birthday, it's March 5, 1987.",
+    "pii_elements": [
+      {
+        "type": "name",
+        "value": "Amanda"
+      },
+      {
+        "type": "dob",
+        "value": "March 5, 1987"
+      }
+    ],
+    "reasoning": "The full date of birth (March 5, 1987) can be considered personally identifiable information (PII) because it can be used to identify or locate an individual, especially when combined with the name provided.",
+    "cleaned_text": "I never forget Amanda's birthday, it's [Month and Day].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Ingredients for a basic tomato sauce: ripe tomatoes, olive oil, garlic, basil, salt, and pepper.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII). It is a simple list of ingredients for making tomato sauce, which does not include any sensitive or personal data.",
+    "cleaned_text": "Ingredients for a basic tomato sauce: ripe tomatoes, olive oil, garlic, basil, salt, and pepper.",
+    "has_pii": false
+  },
+  {
+    "input_text": "The security system installer left his contact, it's securitysetup@techs.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "securitysetup@techs.com"
+      }
+    ],
+    "reasoning": "The email address provided is considered personally identifiable information because it could be used to contact or identify a specific individual or entity associated with that email.",
+    "cleaned_text": "The security system installer left his contact, it's [email placeholder].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Note: The museum is closed on Mondays and national holidays.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII) and therefore does not require any modifications.",
+    "cleaned_text": "Note: The museum is closed on Mondays and national holidays.",
+    "has_pii": false
+  },
+  {
+    "input_text": "The city's public transportation system is undergoing significant upgrades to improve efficiency and reduce emissions.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII) as it discusses a general public matter without referencing any specific individuals, locations, contact information, or identifiable details.",
+    "cleaned_text": "The city's public transportation system is undergoing significant upgrades to improve efficiency and reduce emissions.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Updating my Chase card info, it's now 4234 5678 9012 3456, exp 03/27.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "4234 5678 9012 3456"
+      },
+      {
+        "type": "dob",
+        "value": "03/27"
+      }
+    ],
+    "reasoning": "The text contains sensitive financial information, specifically a credit card number and its expiration date. This information should be kept confidential to protect against unauthorized use and identity theft.",
+    "cleaned_text": "Updating my Chase card info, it's now [credit card number redacted], exp [expiration date redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "My Discover card number is 6011 0000 0000 0004, expires 10/24.",
+    "pii_elements": [
+      {
+        "type": "credit_card",
+        "value": "6011 0000 0000 0004"
+      }
+    ],
+    "reasoning": "The text contains a credit card number and expiration date, which are considered Personally Identifiable Information (PII) because they can be used to identify, contact, or locate a single person, or to commit fraud in the name of the individual to whom they belong.",
+    "cleaned_text": "My Discover card number is [Credit Card Number Redacted], expires [Expiration Date Redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Alicia sent you her IP address, it's 192.168.1.1; can you set up the remote access?",
+    "pii_elements": [],
+    "reasoning": "An IP address is considered PII because it can be used to identify a specific computer or device on a network, potentially compromising privacy or security.",
+    "cleaned_text": "Alicia sent you her IP address, it's [IP ADDRESS]; can you set up the remote access?",
+    "has_pii": true
+  },
+  {
+    "input_text": "The contractor's email for the kitchen remodel is buildpros@example.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "buildpros@example.com"
+      }
+    ],
+    "reasoning": "The email address is considered Personally Identifiable Information (PII) because it can be used to contact or identify a specific individual or entity. Removing or anonymizing this information protects privacy.",
+    "cleaned_text": "The contractor's email for the kitchen remodel is [email address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Found a phone on the train, number is 323-555-1234, hoping to return it to its owner.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "323-555-1234"
+      }
+    ],
+    "reasoning": "The text contains a phone number, which is considered Personally Identifiable Information (PII) as it can be used to directly identify or contact the individual it belongs to. Removing or anonymizing this detail helps protect the individual's privacy.",
+    "cleaned_text": "Found a phone on the train, number is [phone number redacted], hoping to return it to its owner.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Kevin's MasterCard number is 5500 0000 0000 0004, make sure the payment goes through.",
+    "pii_elements": [
+      {
+        "type": "name",
+        "value": "Kevin"
+      },
+      {
+        "type": "credit_card",
+        "value": "5500 0000 0000 0004"
+      }
+    ],
+    "reasoning": "The text contains a credit card number, which is classified as financial PII. This information could be used to make unauthorized transactions or commit identity theft if shared publicly.",
+    "cleaned_text": "Kevin's MasterCard number is [credit card number redacted], make sure the payment goes through.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Please add my new address for the newsletter: 7500 Bellaire Blvd, Houston, TX, 77036.",
+    "pii_elements": [
+      {
+        "type": "address",
+        "value": "7500 Bellaire Blvd, Houston, TX, 77036"
+      }
+    ],
+    "reasoning": "The text includes a specific physical address, which is considered Personally Identifiable Information (PII) because it can be used to locate or identify an individual's living place.",
+    "cleaned_text": "Please add my new address for the newsletter: [new address], Houston, TX, [ZIP code].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Tina's passport is about to expire, it's number A12345678.",
+    "pii_elements": [
+      {
+        "type": "passport",
+        "value": "A12345678"
+      }
+    ],
+    "reasoning": "The passport number is considered Personally Identifiable Information (PII) because it can be used to uniquely identify or locate an individual. Therefore, it should be removed to protect privacy.",
+    "cleaned_text": "Tina's passport is about to expire, it's number [Passport Number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Can't believe I forgot my LinkedIn password again; it's under james.patterson@email.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "james.patterson@email.com"
+      }
+    ],
+    "reasoning": "The email address provided is personal PII that could be used to contact or identify the individual named in the email. Removing it helps to protect their privacy.",
+    "cleaned_text": "Can't believe I forgot my LinkedIn password again; it's under [email protected].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Our guest Wi-Fi's IP address is 172.16.254.1 for all visitors.",
+    "pii_elements": [],
+    "reasoning": "The IP address given for the guest Wi-Fi might be considered sensitive information, as it can be associated with a specific location or network. Removing it helps prevent potential security risks.",
+    "cleaned_text": "Our guest Wi-Fi's IP address is [IP ADDRESS] for all visitors.",
+    "has_pii": true
+  },
+  {
+    "input_text": "The latest software update includes features designed to enhance user security and privacy.",
+    "pii_elements": [],
+    "reasoning": "There is no PII in the provided text to be removed.",
+    "cleaned_text": "The latest software update includes features designed to enhance user security and privacy.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Jogging in the morning can boost your energy levels and improve your mood for the day ahead.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII) to be removed. It is a general statement about the benefits of morning jogging.",
+    "cleaned_text": "Jogging in the morning can boost your energy levels and improve your mood for the day ahead.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Just updated my mailing address: 1125 Elm Street, Denver, CO, 80203.",
+    "pii_elements": [
+      {
+        "type": "address",
+        "value": "1125 Elm Street, Denver, CO, 80203"
+      }
+    ],
+    "reasoning": "The text contains a specific mailing address which is considered PII because it can be used to identify or locate an individual.",
+    "cleaned_text": "Just updated my mailing address: [address redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The new IP for the office camera system is 172.30.1.1.",
+    "pii_elements": [],
+    "reasoning": "The IP address for the office camera system can be considered PII because it is information that can be used to access a system which might contain personal or sensitive information. Revealing this could compromise the security of the office camera system.",
+    "cleaned_text": "The new IP for the office camera system is [IP ADDRESS].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Marie's birthday plans are for September 9, 1995; let's not forget this year.",
+    "pii_elements": [
+      {
+        "type": "dob",
+        "value": "September 9, 1995"
+      }
+    ],
+    "reasoning": "The text contains a specific date of birth, which is considered Personally Identifiable Information (PII) because it can be used to identify or locate an individual, especially when combined with the name mentioned at the beginning.",
+    "cleaned_text": "Marie's birthday plans are for [Date]; let's not forget this year.",
+    "has_pii": true
+  },
+  {
+    "input_text": "A sunset over the ocean paints the sky with hues of orange and pink, creating a serene end to the day.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII). It is a general description of a sunset and does not include any details that could be used to identify or contact an individual.",
+    "cleaned_text": "A sunset over the ocean paints the sky with hues of orange and pink, creating a serene end to the day.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Just heard from Lisa, her new email is lisa.marie@somemail.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "lisa.marie@somemail.com"
+      },
+      {
+        "type": "name",
+        "value": "Lisa"
+      }
+    ],
+    "reasoning": "The email address provided is considered Personally Identifiable Information (PII) because it can be used to identify, contact, or locate the person it belongs to. Additionally, the first name given alongside the email address can further identify the individual.",
+    "cleaned_text": "Just heard from [Name], her new email is [email address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Sending my IP for the firewall whitelist: 10.10.125.5.",
+    "pii_elements": [],
+    "reasoning": "An IP address is considered Personally Identifiable Information because it can be associated with a specific user, device, or location, especially in the context of accessing restricted networks or systems. Sharing such information could compromise security or privacy.",
+    "cleaned_text": "Sending my IP for the firewall whitelist: [IP ADDRESS].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Jessica's birthday is coming up on April 22, 1992, let's surprise her.",
+    "pii_elements": [
+      {
+        "type": "dob",
+        "value": "April 22, 1992"
+      }
+    ],
+    "reasoning": "The full date of birth can be considered PII as it can be used to identify or locate an individual, or to steal their identity. Removing the year makes the information less specific and reduces the risk of misuse.",
+    "cleaned_text": "Jessica's birthday is coming up on April 22, let's surprise her.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Did you know Mia's social security number got leaked? It was 234-56-7890.",
+    "pii_elements": [
+      {
+        "type": "name",
+        "value": "Mia"
+      },
+      {
+        "type": "ssn",
+        "value": "234-56-7890"
+      }
+    ],
+    "reasoning": "The social security number is considered PII because it can be used to identify, contact, or locate a single person, or to identify an individual in context. It's sensitive information that needs to be protected to prevent identity theft and fraud.",
+    "cleaned_text": "Did you know Mia's social security number got leaked? It was [social security number redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Recycling helps reduce waste in landfills and conserves natural resources.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any personally identifiable information (PII). It is a general statement about the benefits of recycling.",
+    "cleaned_text": "Recycling helps reduce waste in landfills and conserves natural resources.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Found an ID at the park, belongs to Samantha Green, license number S987654321.",
+    "pii_elements": [
+      {
+        "type": "name",
+        "value": "Samantha Green"
+      },
+      {
+        "type": "driver_license",
+        "value": "S987654321"
+      }
+    ],
+    "reasoning": "The full name \"Samantha Green\" and the license number \"S987654321\" are considered PII because they can be used to identify or locate an individual.",
+    "cleaned_text": "Found an ID at the park, belongs to [Name Redacted], license number [License Number Redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "James's direct line at work is 212-555-1234, best time to call is between 10 AM and 2 PM.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "212-555-1234"
+      }
+    ],
+    "reasoning": "The given phone number is considered PII as it could potentially be used to contact or identify the individual mentioned. Removing such details helps protect privacy.",
+    "cleaned_text": "James's direct line at work is [PHONE NUMBER], best time to call is between 10 AM and 2 PM.",
+    "has_pii": true
+  },
+  {
+    "input_text": "Patricia mentioned her social security is 321-54-6789 for the HR forms.",
+    "pii_elements": [
+      {
+        "type": "ssn",
+        "value": "321-54-6789"
+      }
+    ],
+    "reasoning": "Social security numbers are sensitive personal information that can be used for identity theft and other malicious activities. It is crucial to remove them to protect individuals' privacy.",
+    "cleaned_text": "Patricia mentioned her social security is [SSN REDACTED] for the HR forms.",
+    "has_pii": true
+  },
+  {
+    "input_text": "I'll be staying at 123 Baker Street, London, UK, NW1 6XE, during the trip.",
+    "pii_elements": [
+      {
+        "type": "address",
+        "value": "123 Baker Street, London, UK, NW1 6XE"
+      }
+    ],
+    "reasoning": "The address provided is considered personally identifiable information because it reveals a specific location where someone will be staying. Sharing such specific details could compromise privacy and security.",
+    "cleaned_text": "I'll be staying at [address], during the trip.",
+    "has_pii": true
+  },
+  {
+    "input_text": "It's believed that the pyramids were constructed using a combination of man-made ramps and the labor of thousands.",
+    "pii_elements": [],
+    "reasoning": "The text provided does not contain any Personally Identifiable Information (PII). It discusses a general historical fact about the construction of the pyramids and does not mention any specific individuals, locations, contact information, or other PII.",
+    "cleaned_text": "It's believed that the pyramids were constructed using a combination of man-made ramps and the labor of thousands.",
+    "has_pii": false
+  },
+  {
+    "input_text": "Can you believe Jake's gotten his driver's license renewed? It's S123-4567-8901 now.",
+    "pii_elements": [
+      {
+        "type": "driver_license",
+        "value": "S123-4567-8901"
+      }
+    ],
+    "reasoning": "The text contains a specific driver's license number, which is considered Personally Identifiable Information (PII) because it can be used to identify or locate an individual, or to steal someone's identity.",
+    "cleaned_text": "Can you believe Jake's gotten his driver's license renewed? It's [driver's license number] now.",
+    "has_pii": true
+  },
+  {
+    "input_text": "My passport got renewed, the new number is G123456789.",
+    "pii_elements": [
+      {
+        "type": "passport",
+        "value": "G123456789"
+      }
+    ],
+    "reasoning": "The passport number is considered Personally Identifiable Information (PII) because it is a unique identifier that can be used to trace back to the individual's personal data. Sharing such information can lead to privacy issues or identity theft.",
+    "cleaned_text": "My passport got renewed, the new number is [passport number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Just a heads-up, my new phone number is 555-678-9012.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "555-678-9012"
+      }
+    ],
+    "reasoning": "The text contains a phone number, which is considered PII because it can be used to contact or identify an individual.",
+    "cleaned_text": "Just a heads-up, my new phone number is [phone number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "My new email for all correspondence is emily.watson@internetprovider.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "emily.watson@internetprovider.com"
+      }
+    ],
+    "reasoning": "The email address provided is considered personally identifiable information (PII) because it can be used to directly contact or identify a specific individual.",
+    "cleaned_text": "My new email for all correspondence is [email address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Sent the parcel to 88 Green Lane, Apt. 205, Nashville, TN, 37207.",
+    "pii_elements": [
+      {
+        "type": "address",
+        "value": "88 Green Lane, Apt. 205, Nashville, TN, 37207"
+      }
+    ],
+    "reasoning": "The address provided is considered PII because it can reveal the location of a specific residence which could be used to identify or locate someone.",
+    "cleaned_text": "Sent the parcel to [address redacted].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Stargazing offers a glimpse into the vastness of our universe and our place within it.",
+    "pii_elements": [],
+    "reasoning": "The provided text does not contain any Personally Identifiable Information (PII).",
+    "cleaned_text": "Stargazing offers a glimpse into the vastness of our universe and our place within it.",
+    "has_pii": false
+  },
+  {
+    "input_text": "The technician's IP to whitelist is 198.51.100.14.",
+    "pii_elements": [],
+    "reasoning": "An IP address is considered personally identifiable information in certain contexts, as it can be used to identify a specific device or location of a user. In the context of whitelisting for security or access control, sharing this publicly could compromise the intended security measures.",
+    "cleaned_text": "The technician's IP to whitelist is [IP Address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "Email me the details at professional.email@domain.com.",
+    "pii_elements": [
+      {
+        "type": "email",
+        "value": "professional.email@domain.com"
+      }
+    ],
+    "reasoning": "The email address is considered PII because it can be used to identify or contact a specific individual directly.",
+    "cleaned_text": "Email me the details at [email address].",
+    "has_pii": true
+  },
+  {
+    "input_text": "My LinkedIn is under my full name, Thomas Anderson.",
+    "pii_elements": [
+      {
+        "type": "name",
+        "value": "Thomas Anderson"
+      }
+    ],
+    "reasoning": "The text includes a full name, which is considered personally identifiable information because it can be used to identify a specific individual.",
+    "cleaned_text": "My LinkedIn is under my full name, [Full Name].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The average lifespan of a domestic cat ranges from 10 to 15 years.",
+    "pii_elements": [],
+    "reasoning": "There is no PII in the provided text to remove.",
+    "cleaned_text": "The average lifespan of a domestic cat ranges from 10 to 15 years.",
+    "has_pii": false
+  },
+  {
+    "input_text": "If you're sending a fax, my number is 555-456-7890.",
+    "pii_elements": [
+      {
+        "type": "phone",
+        "value": "555-456-7890"
+      }
+    ],
+    "reasoning": "The text contains a phone number which is considered PII because it can be used to contact or identify a specific individual.",
+    "cleaned_text": "If you're sending a fax, my number is [fax number].",
+    "has_pii": true
+  },
+  {
+    "input_text": "The Wi-Fi router's default IP is 192.168.0.1, needs changing for security.",
+    "pii_elements": [],
+    "reasoning": "The text provided does not contain any Personally Identifiable Information (PII). The information given is a generic IP address commonly used for local network devices, which does not uniquely identify an individual or reveal personal information.",
+    "cleaned_text": "The Wi-Fi router's default IP is 192.168.0.1, needs changing for security.",
+    "has_pii": true
+  }
+]
