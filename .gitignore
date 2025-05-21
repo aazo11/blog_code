@@ -47,5 +47,30 @@ local_settings.py
 *.db
 *.sqlite3
 
+# Large files and model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.h5
+*.onnx
+*.safetensors
+*.gguf
+*.ggml
+*.gguf.bin
+*.ggml.bin
+*.gguf.pt
+*.ggml.pt
+*.gguf.pth
+*.ggml.pth
+*.gguf.ckpt
+*.ggml.ckpt
+*.gguf.h5
+*.ggml.h5
+*.gguf.onnx
+*.ggml.onnx
+*.gguf.safetensors
+*.ggml.safetensors
+
 # Results directory (optional - uncomment if you don't want to track results)
 # results/ 
